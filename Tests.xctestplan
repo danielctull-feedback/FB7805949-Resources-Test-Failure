@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "5C3C7DAB-87C4-4C8C-971C-2B2700416F96",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "PackageTests",
+        "name" : "PackageTests"
+      }
+    }
+  ],
+  "version" : 1
+}

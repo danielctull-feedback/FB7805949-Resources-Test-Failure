@@ -24,6 +24,8 @@
 		241E52B624A773E3003799D9 /* Resources Test Failure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resources Test Failure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		241E52B824A773E3003799D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		241E52B924A773E3003799D9 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		24CD79D424A779D30016D145 /* Resources Test Failure */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Resources Test Failure"; sourceTree = "<group>"; };
+		24CD79D524A77A1D0016D145 /* Tests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Tests.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,8 @@
 		241E52A124A773E1003799D9 = {
 			isa = PBXGroup;
 			children = (
+				24CD79D524A77A1D0016D145 /* Tests.xctestplan */,
+				24CD79D424A779D30016D145 /* Resources Test Failure */,
 				241E52A624A773E1003799D9 /* Shared */,
 				241E52B024A773E3003799D9 /* iOS */,
 				241E52B724A773E3003799D9 /* macOS */,
