@@ -1,5 +1,9 @@
 # Resources Test Failure
 
+Filed as FB7805949 on 27th June 2020.
+
+## About this failure
+
 This repository contains a Swift package which includes a test target named `PackageTests` that includes a resources directory named  "Resources". On the command line with the Swift 5.3 tools on both Linux and macOS 11, this test runs fine when using `swift test`.
 
 Also included is a Xcode project that contains apps created with the multiplatform app template. In the project there is a reference to the Swift package, and a test plan which runs the `PackageTests`. This is used as the test plan for the iOS and macOS app schemes.
@@ -21,3 +25,53 @@ Signing Identity:     "-"
 Command CodeSign failed with a nonzero exit code
 ```
 
+## Feedback report
+
+### Basic Information
+
+**Please provide a descriptive title for your feedback:**
+
+Xcode fails to build Swift package test target for iOS when the tests include a resources directory named "Resources"
+
+**Which area are you seeing an issue with?**
+
+Xcode
+
+**What type of feedback are you reporting?**
+
+Incorrect/Unexpected Behavior
+
+**Is this Feedback related to a Lab, Engineering Session, or Forum Topic from WWDC20?**
+
+Yes, a Lab
+
+**Please provide the lab title:**
+
+Xcode Open Hours lab
+
+### Details
+
+**What version of Xcode are you using?**
+
+Xcode 12 beta 1
+
+### Description
+
+**Please describe the issue:**
+
+I have a swift package with a test target which includes a resources directory named "Resources". This builds and runs fine on the command line with `swift test`. In an Xcode project I have referenced the swift package and added the test target to a test plan. When running these tests in Xcode they fail for iOS, although they work fine for macOS.
+
+**Please list the steps you took to reproduce the issue:**
+
+* Open the attached sample project 
+
+* Run the tests for the iOS scheme  
+* See them fail with a code sign issue
+
+**What did you expect to happen?**
+
+I would expect it to pass, but it seems Xcode has special treatment for a Resources directory on iOS, so at the worst I would expect an error stating that directories named "Resources" are not supported on iOS.
+
+**What actually happened?**
+
+Xcode fails with an obscure code sign error.
