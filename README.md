@@ -25,6 +25,8 @@ Signing Identity:     "-"
 Command CodeSign failed with a nonzero exit code
 ```
 
+This seems to have been a problem for a while as this [stack overflow](https://stackoverflow.com/questions/29271548/code-sign-error-bundle-format-unrecognized-invalid-or-unsuitable) question has the same issue with a "Resources" directory in 2015.
+
 ## Feedback report
 
 ### Basic Information
